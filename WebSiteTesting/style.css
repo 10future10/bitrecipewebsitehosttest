@@ -1,0 +1,289 @@
+/* Apply styles to the container */
+.container {
+    position: relative;
+}
+
+/* Styles for box1 */
+.box1 {
+    width: 300px;
+    background-color: rgba(209, 209, 209, 0.103);
+    border-radius: 25px;
+    position: absolute;
+    font-family: 'Playpen Sans', sans-serif;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    transition: all 1s;
+    top: 5;
+    left: 25;
+    border: 2px solid rgba(209, 209, 209, 0.103);
+}
+
+.box1:hover {
+    color: rgb(255, 255, 255);
+    transform: scale(0.8);
+    background-color: rgba(145, 145, 145, 0.075);
+    border-radius: 55px;
+}
+
+/* Styles for box2 */
+.box2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*Centerhorizontally*/justify-content: center;
+    /*Centervertically*/width: 300px;
+    background-color: rgba(209, 209, 209, 0.103);
+    border-radius: 25px;
+    position: absolute;
+    font-family: 'Playpen Sans', sans-serif;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    transition: all 1s;
+    left: 25px;
+    top: 155px;
+    height: 700px;
+    border: 2px solid rgba(209, 209, 209, 0.103);
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+}
+
+.box2:hover {
+    color: rgb(255, 255, 255);
+    transform: scale(0.95);
+    background-color: rgba(145, 145, 145, 0.103);
+    border-radius: 55px;
+    -webkit-transform: scale(0.95);
+    -moz-transform: scale(0.95);
+    -ms-transform: scale(0.95);
+    -o-transform: scale(0.95);
+}
+
+/* Styles for box3 */
+.box3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*Centerhorizontally*/justify-content: center;
+    /*Centervertically*/width: 300px;
+    background-color: rgba(209, 209, 209, 0.103);
+    border-radius: 25px;
+    position: absolute;
+    font-family: 'Playpen Sans', sans-serif;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    transition: all 1s;
+    width: 1400px;
+    top: 155px;
+    left: 375px;
+    height: 700px;
+    border: 2px solid rgba(209, 209, 209, 0.103);
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+}
+
+.box3:hover {
+    color: rgb(255, 255, 255);
+    transform: scale(0.95);
+    background-color: rgba(145, 145, 145, 0.103);
+    border-radius: 55px;
+    -webkit-transform: scale(0.95);
+    -moz-transform: scale(0.95);
+    -ms-transform: scale(0.95);
+    -o-transform: scale(0.95);
+}
+
+.box4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*Centerhorizontally*/justify-content: center;
+    /*Centervertically*/width: 300px;
+    background-color: rgba(209, 209, 209, 0.103);
+    border-radius: 25px;
+    position: absolute;
+    font-family: 'Playpen Sans', sans-serif;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    transition: all 1s;
+    width: 1400px;
+    top: 150px;
+    left: 250px;
+    height: 700px;
+    border: 2px solid rgba(209, 209, 209, 0.103);
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+}
+
+.box4:hover {
+    color: rgb(255, 255, 255);
+    transform: scale(0.95);
+    background-color: rgba(145, 145, 145, 0.103);
+    border-radius: 55px;
+    -webkit-transform: scale(0.95);
+    -moz-transform: scale(0.95);
+    -ms-transform: scale(0.95);
+    -o-transform: scale(0.95);
+}
+/* Apply styles to the meals divs inside box2 */
+.meal {
+    left: 25px;
+    transition-duration: 1s;
+    width: 90%;
+    color: rgb(255, 255, 255);
+    background-color: rgba(119, 119, 119, 0.192);
+    border: 2px solid rgba(209, 209, 209, 0.315);
+    border-radius: 25px;
+    margin: 5px auto;
+}
+
+.meal:hover {
+    color: rgb(177, 177, 177);
+    transform: scale(0.95);
+    background-color: rgba(138, 138, 138, 0.11);
+    border-radius: 55px;
+    -webkit-transform: scale(0.95);
+    -moz-transform: scale(0.95);
+    -ms-transform: scale(0.95);
+    -o-transform: scale(0.95);
+}
+
+
+.button-1 {
+  transition-duration: 1s;
+  background-color: #ffffff36;
+  border: 1px solid #d5d9d9;
+  border-radius: 8px;
+  box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Playpen Sans', sans-serif;
+  font-size: 13px;
+  line-height: 29px;
+  padding: 0 10px 0 11px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  width: 100px;
+}
+
+.button-1:hover {
+  border-radius: 16px;
+  background-color: #f7fafa25;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -o-border-radius: 16px;
+}
+
+.mealboxcontainerselect {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Use space-between to create spacing between elements */
+    width: 300px;
+    left: 15px;
+    top: 15px;
+    height: 95%;
+    transition-duration: 1s;
+    width: 30%;
+    color: rgb(255, 255, 255);
+    background-color: rgba(119, 119, 119, 0.192);
+    border: 2px solid rgba(209, 209, 209, 0.315);
+    border-radius: 25px;
+    margin: 5px auto;
+}
+
+
+.mealboxcontainerselect:hover {
+    color: rgb(177, 177, 177);
+    transform: scale(0.95);
+    background-color: rgba(138, 138, 138, 0.11);
+    border-radius: 55px;
+    -webkit-transform: scale(0.95);
+    -moz-transform: scale(0.95);
+    -ms-transform: scale(0.95);
+    -o-transform: scale(0.95);
+}
+
+.textbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    background-color: rgba(209, 209, 209, 0.103);
+    border-radius: 15px;
+    position: absolute;
+    font-family: 'Playpen Sans', sans-serif;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    transition: all 1s;
+    height: 100px;
+    top: 15px;
+    left: 5%;
+    border: 2px solid rgba(209, 209, 209, 0.103);
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+.recipebox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 50px;
+    left: 25px;
+    transition-duration: 1s;
+    width: 90%;
+    height: 120px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(119, 119, 119, 0.192);
+    border: 2px solid rgba(209, 209, 209, 0.315);
+    border-radius: 25px;
+    margin: 5px auto;
+}
+
+.recipebox:hover {
+    color: rgb(177, 177, 177);
+    transform: scale(0.95);
+    background-color: rgba(138, 138, 138, 0.11);
+    border-radius: 55px;
+    -webkit-transform: scale(0.95);
+    -moz-transform: scale(0.95);
+    -ms-transform: scale(0.95);
+    -o-transform: scale(0.95);
+}
+
+.search-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    background-color: rgba(209, 209, 209, 0.103);
+    border-radius: 15px;
+    position: absolute;
+    font-family: 'Playpen Sans', sans-serif;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    transition: all 1s;
+    height: 30px;
+    top: 130px;
+    left: 5%;
+    border: 2px solid rgba(110, 110, 110, 0.359);
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
