@@ -3,6 +3,7 @@
 <head>
     <title>Bit Recipes</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playpen+Sans:300,400,500,700&display=swap">
     <script src="script.js"></script>
@@ -16,67 +17,124 @@
 </head>
 
 <body>
+    <button class="button" data-text="Awesome">
+        <span class="actual-text">&nbsp;BitRecipes&nbsp;</span>
+        <span aria-hidden="true" class="hover-text">&nbsp;BitRecipes&nbsp;</span>
+    </button>
     <div class="box4" id="intro">
         <h1>Bit Recipes</h1>
-         <button class="button-1" onclick="started()">
-        Enter
+        <!-- Down Controller <h2>Site is currently down! Please try again later.</h2> -->
+         <!-- Down Controller -->
+         <button class="button-1" onclick="started()">Enter</button>
     </div>
-   
-    </button>
     <div id="main" style="display: none;">
         <div class="container">
             <div class="box1" style="display: none;">
                 <h1 id="box1">Bit Recipes</h1>
                 <h3>Owned by Bit Studios</h3>
             </div>
-    
             <div class="box2">
                 <h2>Recipes</h2>
                 <div class="meal">
                     <h1>Meals</h1>
                 </div>
-                <button class="button-1">
-                    View
-                </button>
+                <button class="button-1" onclick="showmeals()">View</button>
                 <br>
                 <div class="meal">
                     <h1>Snacks</h1>
                 </div>
-                <button class="button-1">
-                    View
-                </button>
+                <button class="button-1">View</button>
                 <br>
                 <div class="meal">
                     <h1>Breakfast</h1>
                 </div>
-                <button class="button-1">
-                    View
-                </button>
+                <button class="button-1">View</button>
                 <br>
                 <div class="meal">
                     <h1>Lunch</h1>
                 </div>
-                <button class="button-1">
-                    View
-                </button>
+                <button class="button-1">View</button>
                 <br>
-             </div>
-    
-             <div class="box3">
+            </div>
+            <div class="box3">
                 <div class="mealboxcontainerselect" style="position: absolute;">
                     <div class="textbox" id="recipesearchtitle" style="position: absolute;">
                         <h1>Recipes</h1>
                     </div>
-                    <div class="recipebox" id="pepperonie pizza">
-                        <h2>🍕Simple Pizza🍕</h2>
-                        <button class="button-1">View Recipe</button>
+                    <div id="meals" style="display: none;">
+                        <div class="recipebox" id="pepperoni_pizza">
+                            <h2>🍕Simple Pizza🍕</h2>
+                            <button class="button-1" onclick="showpepporoniepizzameal()">View Recipe</button>
+                        </div>
+                        <div class="recipebox" id="cheese_hamburger">
+                            <h2>🍔Simple CheeseBurger🍔</h2>
+                            <button class="button-1" onclick="showcheeseburgermeal()">View Recipe</button>
+                        </div>
+                        <!-- Add more recipe boxes -->
                     </div>
-                    <div class="recipebox" id="cheese hamburger">
-                        <h2>🍔Simple Cheese Hamburger🍔</h2>
-                        <button class="button-1">View Recipe</button>
+                </div>
+                <div class="box5">
+                    <div class="textbox" id="titlerecipemain">
+                        <h1>Instructions</h1>
+                        <br>
+                        <div id="pepperoniepizzamain" style="display: none;">
+                            <div class="recipemain">
+                                <h1 class="textbox">Recipe 🍕</h1>
+                                <br>
+                                <div class="recipetextbox">
+                                    <h3> 
+                                        Step 1 - Ingredients: 
+
+                                        Pizza dough <br>
+                                        1/2 cup pizza sauce <br>
+                                        12 oz grated cheese (your choice) <br>
+                                        18-30 pepperoni slices <br>
+                                        1/2 tsp black pepper (add salt if desired) <br>
+                                        1 tsp oregano (optional) <br>
+                                        Step 2 - Cooking Instructions: <br>
+                                        
+                                        Preheat your oven to 500°F (260°C). <br>
+                                        Roll out the pizza dough on a floured surface. If it's tough to roll, let it sit at room temperature for 5 minutes. <br>
+                                        Spread pizza sauce on the dough, add cheese and pepperoni. <br>
+                                        Bake for 6-8 minutes. Check it. For extra crispiness, bake for another 6-8 minutes until golden brown. <br>
+                                        Enjoy your pizza!
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    
-                    <!-- Add more recipe boxes as needed -->
+
+                    <div id="cheeseburgeramain" style="display: none;">
+                        <div class="recipemain">
+                            <h1 class="textbox">Recipe 🍔</h1>
+                            <br>
+                            <div class="recipetextbox">
+                                <h3> 
+                                    Ingredients:
+
+                                    1 pound (450g) ground beef <br>
+                                    Salt and pepper <br>
+                                    4 hamburger buns <br>
+                                    4 slices of cheese <br>
+                                    Toppings (lettuce, tomato, onion, pickles, ketchup, mustard, mayo) <br>
+                                    Instructions: <br>
+                                    
+                                    Preheat your grill or skillet to medium-high heat. <br>
+                                    
+                                    Shape the ground beef into 4 patties. Season with salt and pepper. <br>
+                                    
+                                    Cook the patties for 4-5 minutes per side for medium-rare to medium doneness. Add cheese in the last minute. <br>
+                                    
+                                    Toast the buns. <br>
+                                    
+                                    Assemble: Place patty with cheese on the bun, add your toppings. <br>
+                                    
+                                    Serve hot. Enjoy your cheeseburgers! <br>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 </div>
             </div>
         </div>

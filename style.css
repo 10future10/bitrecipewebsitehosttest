@@ -3,6 +3,50 @@
     position: relative;
 }
 
+/* === removing default button style ===*/
+.button {
+    margin: 0;
+    height: auto;
+    background: transparent;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* button styling */
+  .button {
+    --border-right: 6px;
+    --text-stroke-color: rgba(255,255,255,0.6);
+    --animation-color: #37FF8B;
+    --fs-size: 2em;
+    letter-spacing: 3px;
+    text-decoration: none;
+    font-size: var(--fs-size);
+    font-family: "Arial";
+    position: relative;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1px var(--text-stroke-color);
+  }
+  /* this is the text, when you hover on button */
+  .hover-text {
+    position: absolute;
+    box-sizing: border-box;
+    content: attr(data-text);
+    color: var(--animation-color);
+    width: 0%;
+    inset: 0;
+    border-right: var(--border-right) solid var(--animation-color);
+    overflow: hidden;
+    transition: 0.5s;
+    -webkit-text-stroke: 1px var(--animation-color);
+  }
+  /* hover */
+  .button:hover .hover-text {
+    width: 100%;
+    filter: drop-shadow(0 0 23px var(--animation-color))
+  }
+
 /* Styles for box1 */
 .box1 {
     width: 300px;
@@ -130,6 +174,41 @@
     -ms-transform: scale(0.95);
     -o-transform: scale(0.95);
 }
+
+.box5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*Centerhorizontally*/justify-content: center;
+    /*Centervertically*/width: 300px;
+    background-color: rgba(209, 209, 209, 0.103);
+    border-radius: 25px;
+    position: absolute;
+    font-family: 'Playpen Sans', sans-serif;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    transition: all 1s;
+    width: 65%;
+    top: 30px;
+    left: 450px;
+    height: 650px;
+    border: 2px solid rgba(209, 209, 209, 0.103);
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+}
+
+.box5:hover {
+    color: rgb(255, 255, 255);
+    transform: scale(0.95);
+    background-color: rgba(145, 145, 145, 0.103);
+    border-radius: 55px;
+    -webkit-transform: scale(0.95);
+    -moz-transform: scale(0.95);
+    -ms-transform: scale(0.95);
+    -o-transform: scale(0.95);
+}
 /* Apply styles to the meals divs inside box2 */
 .meal {
     left: 25px;
@@ -167,7 +246,6 @@
   font-family: 'Playpen Sans', sans-serif;
   font-size: 13px;
   line-height: 29px;
-  padding: 0 10px 0 11px;
   position: relative;
   text-align: center;
   text-decoration: none;
@@ -239,9 +317,36 @@
     -o-border-radius: 15px;
 }
 
+.recipetextbox {
+    font-size: small;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    background-color: rgba(209, 209, 209, 0);
+    border-radius: 15px;
+    position: absolute;
+    font-family: 'Playpen Sans', sans-serif;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    transition: all 1s;
+    height: auto; /* Set the height to auto to allow content to expand vertically */
+    top: 50px;
+    left: 5%;
+    border: 0px solid rgba(209, 209, 209, 0);
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    white-space: normal; /* Allow text to wrap within the container */
+    word-wrap: break-word; /* Allow long words to break and wrap */
+}
+
 .recipebox {
     display: flex;
     flex-direction: column;
+    font-size: inherit;
     align-items: center;
     top: 50px;
     left: 25px;
@@ -282,6 +387,51 @@
     top: 130px;
     left: 5%;
     border: 2px solid rgba(110, 110, 110, 0.359);
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+.recipemain {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    background-color: rgba(209, 209, 209, 0);
+    border-radius: 15px;
+    position: absolute;
+    font-family: 'Playpen Sans', sans-serif;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    transition: all 1s;
+    height: 500px;
+    top: 15px;
+    left: 5%;
+    border: 2px solid rgba(209, 209, 209, 0);
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+.image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    background-color: rgba(209, 209, 209, 0);
+    border-radius: 15px;
+    position: absolute;
+    font-family: 'Playpen Sans', sans-serif;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    transition: all 1s;
+    height: 100px;
+    top: 15px;
+    left: 0%;
+    border: 2px solid rgba(209, 209, 209, 0);
     -webkit-border-radius: 15px;
     -moz-border-radius: 15px;
     -ms-border-radius: 15px;
